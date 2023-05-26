@@ -191,11 +191,11 @@ function myFunctionReadMore1() {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
+    btnText.innerHTML = "Voir Plus";
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
-    btnText.innerHTML = "Read less";
+    btnText.innerHTML = "Voir Moins";
     moreText.style.display = "inline";
   }
 } 
