@@ -10,6 +10,16 @@ window.addEventListener('scroll', () => {
   }
 })
 /*--------*/
+/*-popup-*/
+document.querySelector('.connexion').addEventListener('click', function() {
+  document.getElementById('login-popup').classList.remove('hide');
+  document.getElementById('login-popup').classList.add('show');
+})
+
+document.querySelector('.close').addEventListener('click', function() {
+  document.getElementById('login-popup').classList.remove('show');  
+  document.getElementById('login-popup').classList.add('hide');  
+})
 /*------slides---*/
 var makeBSS = function (el, options) {
   var $slideshows = document.querySelectorAll(el), // a collection of all of the slideshow

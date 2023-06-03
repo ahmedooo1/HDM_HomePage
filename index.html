@@ -7,34 +7,39 @@
   <title>HDM Network</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <nav>
-      <div class="nav-wrapper header-bg">
-        <a href="#" class="logo"></a>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#">Un stage chez HDM</a></li>
-          <li><a href="#">À propos de nous</a></li>
-          <li><a href="#">Contactez-nous</a></li>
-        </ul>
-        <div class="moreOptions">
-          <select name="lang" id="lang">
-            <option value="fr">Français</option>
-            <option value="en">English</option>
-          </select>
-          <a href="#"> <div class="fa fa-user-lock connexion"> </div></a>
-          
-        </div>
+<body> 
+   <div id="login-popup" class="popup">
+    <a href="#" class="close">&times;</a>
     
-        <button class="menu-toggle" id="menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-   
-    </nav>
+    <form class="form">
+      <h2>Connexion</h2>
+      <input type="email" id="email" placeholder="E-mail"><br>
+      <input type="password" id="password" placeholder="Password"><br>
+      <input type="submit" value="Connexion">
+    </form>
+  </div>
+  <header class="top-nav">
+    <div class="nav-wrapper">
+      <a href="#" class="logo"></a>    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li><a href="#">Un stage chez HDM</a></li>
+      <li><a href="#">À propos de nous</a></li>
+      <li><a href="#">Contactez-nous</a></li>
+    </ul>
+    <div class="moreOptions">
+      <select name="lang" id="lang">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+      <a href="#"> <div class="fa fa-user-lock connexion"> </div></a>
+      
+    </div>
   </header>
+
 
   <div class="bss-slides demo1" tabindex="1" autofocus="autofocus">
     <figure>
